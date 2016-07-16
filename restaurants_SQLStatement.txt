@@ -1,0 +1,42 @@
+
+
+CREATE TABLE `restaurants` (
+  `id` int(11) NOT NULL,
+  `name` varchar(55) NOT NULL,
+  `rating` int(2) NOT NULL,
+  `contact_number` int(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `restaurants`
+--
+
+INSERT INTO `restaurants` (`id`, `name`, `rating`, `contact_number`) VALUES
+(1, 'McDonalds', 6, 1800999999),
+(2, 'A&W', 8, 1800222222),
+(3, 'Arbys', 3, 1800111111),
+(4, 'Olive Garden', 8, 1800666666),
+(5, 'Boston Pizza', 9, 1800333333);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `restaurants`
+--
+ALTER TABLE `restaurants`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `restaurants`
+--
+ALTER TABLE `restaurants`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
